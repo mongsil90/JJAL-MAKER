@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JJal-Maker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Noto+Serif+KR:wght@200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Serif+KR:wght@200..900&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="manifest" href="manifest.json">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <input type="file" accept="image/*" id="image-file" />
+    <canvas></canvas>
+    <input type="number" min="1" value="25" id="text-size" />
+    <label for="font-type">Choose the font style</label>
+    <select id="font-type" autocomplete="off" required>
+      <option
+        value="'Noto Sans KR', sans-serif"
+        style="font-family: 'Noto Sans KR', sans-serif"
+      >
+        고딕체
+      </option>
+      <option
+        value="'Nanum Pen Script', cursive"
+        style="font-family: 'Nanum Pen Script', cursive"
+      >
+        손글씨
+      </option>
+    </select>
+    <input type="text" placeholder="Write your text!" id="input-text" />
+    <div id="sticker-gallery"></div>
+  </body>
+</html>
